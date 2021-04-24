@@ -46,7 +46,7 @@ export default function Home() {
         </Widget>
         <Footer/>
       </QuizContainer>
-      <GitHubCorner projectUrl="link do meu projeto"/>
+      <GitHubCorner projectUrl="https://github.com/jorge-junio/quiz-imersao-react"/>
     </QuizBackground>
   );
 }
