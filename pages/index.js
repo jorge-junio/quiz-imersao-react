@@ -1,4 +1,8 @@
+import React from 'react';
 import styled from 'styled-components';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizBackground from '../src/components/QuizBackground';
@@ -25,8 +29,14 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter();
+  let [name, setName] = React.useState("");
+
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>Quiz sobre mim</title>
+      </Head>
       <QuizContainer>
         <Widget>
           <Widget.Header>
@@ -34,7 +44,22 @@ export default function Home() {
           </Widget.Header>
 
           <Widget.Content>
-            <p>{ db.descricao }</p>
+            <form onSubmit={function(infosDoEvento) {
+              infosDoEvento.preventDefault();
+
+              router.push(`/quiz?name=${name}`);
+            }}>
+              <input
+                onChange={function(infosDoEvento){
+                  setName(infosDoEvento.target.value);
+                }} 
+                Digite seu nome para jogar
+              />
+
+              <button type="submit" disabled={name.length === 0}>
+                Jogar
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
         <Widget>
