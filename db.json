@@ -1,17 +1,80 @@
 {
-    "bg": "https://articles.gamerheadquarters.com/images/top10/movies/10.jpg",
-    "title": "titulo",
-    "descricao": "descricao",
+    "bg": "https://images3.alphacoders.com/851/851490.jpg",
+    "title": "Quiz dos Cãesinhos",
+    "descricao": "Um quiz sobre os 'melhores amigos do homem'",
     "questions": [
-        
+    {
+        "image": "https://media.giphy.com/media/mcHOSTJMjCrjW/giphy.gif",
+        "title": "Quantos dentes um cachorro tem?",
+        "description": "Essa é difícil",
+        "answer": 1,
+        "alternatives": [
+            "40",
+            "42",
+            "36",
+            "34"
+        ]
+    },
+    {
+        "image": "https://media.giphy.com/media/VzGQrj8sLH4GLcSiG1/giphy.gif",
+        "title": "Cachorros possuem impressão digital?",
+        "description": "Será :O",
+        "answer": 0,
+        "alternatives": [
+            "Sim",
+            "Não"
+        ]
+    },
+    {
+        "image": "https://media.giphy.com/media/nNOvniJd8KjNC/giphy.gif",
+        "title": "Os cães nascem surdos e cegos?",
+        "description": "Eu duvido vocês acertarem",
+        "answer": 0,
+        "alternatives": [
+            "Verdadeiro",
+            "Falso"
+        ]
+    },
+    {
+        "image": "https://media.giphy.com/media/8GTluN10Q7fJm/giphy.gif",
+        "title": "Cães enxergam apenas preto e branco?",
+        "description": "Essa nem eu sei a resposta",
+        "answer": 1,
+        "alternatives": [
+            "Sim",
+            "Não"
+        ]
+    },
+    {
+        "image": "https://media.giphy.com/media/kreQ1pqlSzftm/giphy.gif",
+        "title": "Cães comem pastos para aliviar problemas estomacais?",
+        "description": "Você não deve saber a resposta dessa",
+        "answer": 0,
+        "alternatives": [
+            "Sim",
+            "Não"
+        ]
+    },
+    {
+        "image": "https://media.giphy.com/media/uCAytiJCDsqTS/giphy.gif",
+        "title": "Chocolate pode matar um cachorro?",
+        "description": "Responda com cuidado",
+        "answer": 0,
+        "alternatives": [
+            "Sim",
+            "Não"
+        ]
+    }
     ],
     "external": [
-
+        "https://aluraquiz-base.alura-challenges.vercel.app/",
+        "https://aluraquiz-css.omariosouto.vercel.app/",
+        "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
     ],
     "theme": {
         "colors": {
-            "primary": "#4CAF50",
-            "secondary": "#FF9800",
+            "primary": "#006400",
+            "secondary": "#D2691E",
             "mainBg": "#1C1814",
             "contrastText": "#FFFFFF",
             "wrong": "#FF5722",
