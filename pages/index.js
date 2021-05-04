@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title>Quiz sobre mim</title>
+        <title>{db.title}</title>
       </Head>
       <QuizContainer>
         <QuizLogo/>
